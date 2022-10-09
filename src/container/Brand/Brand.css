@@ -1,0 +1,70 @@
+.app__brand {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+    border-top: 20 px;
+    background-color: var(--color-crimson);
+}
+.app__brand-heading{
+  margin: 15px;
+} 
+.app__brand_element-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app__brand_card {
+    position: relative;
+    margin-top: 20 px;
+    flex-direction: column;
+    min-width: 10 px;
+    height: 10 px;
+    margin-right: 2rem;
+    width: auto;
+}
+.app__brand-text {
+    padding: 0 0 65px;
+    text-align: left;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__brand-heading {
+        font-size: 180px;
+        line-height: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__brand-heading {
+        font-size: 90px;
+    }
+    .app__brand_element-container{
+        display: flex;
+        flex-direction:inherit;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__brand-heading {
+        font-size: 70px;
+        line-height: 87px;
+    }
+    .app__brand_element-container{
+        display: flex;
+        flex-direction:inherit;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__brand-heading {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
