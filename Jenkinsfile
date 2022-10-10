@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install react-scripts'
+                bat 'npm install react-scripts'
                 bat 'npm run build'
                 bat 'npm install'
             }
