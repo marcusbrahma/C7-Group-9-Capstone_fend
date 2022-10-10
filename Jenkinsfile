@@ -6,13 +6,12 @@ pipeline {
          }
          }
     environment {
-        CI = 'true'
+        CI = false npm run build
     }
     stages {
         stage('Build') {
             steps {
                 bat 'npm install react-scripts'
-                bat 'npm run build'
                 bat 'npm install'
             }
         }
